@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music icon Animation</title>
+    <style>
+        body{
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         height: 100vh;
+         /* background-image: linear-gradient(120deg, #3636c3,#51a151, #78a978); */
+         background-color: black;
+        }
+        .music{
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         position: relative;
+         /* height: 300px;
+         width:200px; */
+        }
+        .music .bar{
+          width: 10px;
+          margin: 0.3em;
+          border-radius: 12px;
+          /* border: 2px solid #9b7272; */
+          box-shadow: 1px 1px 8px silver, -1px -1px 8px silver;
+          animation: movement 1.3s ease-in-out infinite;
+        }
+        @keyframes movement{
+            0%,100%{
+                height: 2px;
+            }
+            50%{
+                height: 65px;
+            }
+        }
+    
+        .music .bar:nth-child(1){
+            background: orange;
+            animation-delay: 1s;
+        }
+        .music .bar:nth-child(2){
+            background: pink;
+            animation-delay: 0.8s;
+        }
+        .music .bar:nth-child(3){
+            background: orange;
+            animation-delay: 0.6s;
+        }
+        .music .bar:nth-child(4){
+            background: pink;
+            animation-delay: 0.4s;
+        }
+        .music .bar:nth-child(5){
+            background: orange;
+            animation-delay: 0.2s;
+        }
+        .music .bar:nth-child(6){
+            background: pink;
+            animation-delay: 0.2s;
+        }
+        .music .bar:nth-child(7){
+            background: orange;
+            animation-delay: 0.4s;
+        }
+        .music .bar:nth-child(8){
+            background: pink;
+            animation-delay: 0.6s;
+        }
+        .music .bar:nth-child(9){
+            background: orange;
+            animation-delay: 0.8s;
+        }
+        .music .bar:nth-child(10){
+            background: pink;
+            animation-delay: 1s;
+        }
+    </style>
+</head>
+<body>
+    <div class="music">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+</body>
+</html>
